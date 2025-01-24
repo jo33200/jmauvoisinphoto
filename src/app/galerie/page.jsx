@@ -100,7 +100,7 @@ const GalleryPage = () => {
       {/* Modale */}
       {isModalOpen && currentAlbum && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80"
           onClick={closeModal}
         >
           <div
@@ -123,13 +123,13 @@ const GalleryPage = () => {
             </div>
             <button
               onClick={handlePrev}
-              className="absolute left-2 top-1/2 z-50 -translate-y-1/2  rounded-full bg-gray-800 p-2 text-white"
+              className="absolute left-2 top-1/2 z-50 translate-y-1/2 rounded-full bg-gray-800 p-2 text-white"
             >
               ‹
             </button>
             <button
               onClick={handleNext}
-              className="absolute right-2 top-1/2 z-50 -translate-y-1/2  rounded-full bg-gray-800 p-2 text-white"
+              className="absolute right-2 top-1/2 z-50 translate-y-1/2 rounded-full bg-gray-800 p-2 text-white"
             >
               ›
             </button>

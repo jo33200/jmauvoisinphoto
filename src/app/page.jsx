@@ -55,10 +55,10 @@ export default function Home() {
           className="rounded-lg shadow-lg"
         />
         <p className="mt-4 text-center text-lg italic text-gray-400">
-          &quot;Chaque instant est une opportunité de capturer l&apos;éphémère.&quot;
+          &quot;Chaque instant est une opportunité de capturer
+          l&apos;éphémère.&quot;
         </p>
       </div>
     </div>
   );
 }
-
