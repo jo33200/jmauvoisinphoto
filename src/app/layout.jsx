@@ -2,6 +2,7 @@ import './globals.css';
 import '@/fontawesome';
 import Header from '@/components/common/header';
 import Footer from '@/components/common/footer';
+import ScrollToTopButton from '@/components/common/ScrollToTopButton';
 
 export const metadata = {
   title: 'Jean Mauvoisin',
@@ -15,7 +16,10 @@ export default function RootLayout({ children }) {
         <Header>
           <Header />
         </Header>
-        <main>{children}</main>
+        <main>
+        <ScrollToTopButton />
+          {children}
+        </main>
         <footer>
           <Footer />
         </footer>
