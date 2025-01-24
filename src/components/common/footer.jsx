@@ -79,9 +79,33 @@ const Footer = () => {
                 </a>
             </li>
             <li className="flex items-center justify-start gap-8">
-              <FontAwesomeIcon icon={faFacebook} size="xl" />
-              <FontAwesomeIcon icon={faInstagram} size="xl" />
-              <FontAwesomeIcon icon={faLinkedin} size="xl" />
+            <Link
+                href="https://www.facebook.com/media/set/?set=a.1398767135193&type=3"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-gray-400 transition-transform hover:scale-110"
+                aria-label="Facebook"
+              >
+                <FontAwesomeIcon icon={faFacebook} size="xl" />
+              </Link>
+              <Link
+                href="https://www.instagram.com/jean_mauvoisin/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-gray-400 transition-transform hover:scale-110"
+                aria-label="Instagram"
+              >
+                <FontAwesomeIcon icon={faInstagram} size="xl" />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/in/jean-mauvoisin-207a5335/?originalSubdomain=fr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-gray-400 transition-transform hover:scale-110"
+                aria-label="LinkedIn"
+              >
+                <FontAwesomeIcon icon={faLinkedin} size="xl" />
+              </Link>
             </li>
           </ul>
         </nav>
