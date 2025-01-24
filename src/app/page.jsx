@@ -11,6 +11,7 @@ export default function Home() {
           width="1900"
           height="1000"
           className="object-cover shadow-inner"
+          priority={true}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black mix-blend-multiply"></div>
       </div>
