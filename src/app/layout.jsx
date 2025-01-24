@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
           <Header />
         </Header>
         <main>
-        <ScrollToTopButton />
+          <ScrollToTopButton />
           {children}
         </main>
         <footer>

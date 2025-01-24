@@ -1,16 +1,16 @@
 'use client';
 
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import {
   faFacebook,
   faInstagram,
   faLinkedinIn,
 } from '@fortawesome/free-brands-svg-icons';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Oswald } from 'next/font/google';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useState, useEffect } from 'react';
-import { Oswald } from 'next/font/google';
+import { useEffect, useState } from 'react';
 
 const oswald = Oswald({
   variable: '--font-oswald',
@@ -47,7 +47,7 @@ const Header = () => {
         </section>
 
         {/* Navigation principale */}
-        <section className="hidden md:flex items-center gap-10">
+        <section className="hidden items-center gap-10 md:flex">
           <nav aria-label="Navigation principale">
             <ul className="flex gap-10">
               {[
@@ -58,7 +58,7 @@ const Header = () => {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className={`text-md font-semibold ${
+                    className={`text-base font-semibold ${
                       clientPathname === link.href ? 'text-white' : 'text-white'
                     } transition-transform hover:scale-110`}
                   >
@@ -75,7 +75,7 @@ const Header = () => {
               href="https://www.facebook.com/media/set/?set=a.1398767135193&type=3"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-gray-400 transition-transform hover:scale-110"
+              className="text-white transition-transform hover:scale-110 hover:text-gray-400"
               aria-label="Facebook"
             >
               <FontAwesomeIcon icon={faFacebook} size="lg" />
@@ -84,7 +84,7 @@ const Header = () => {
               href="https://www.instagram.com/jean_mauvoisin/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-gray-400 transition-transform hover:scale-110"
+              className="text-white transition-transform hover:scale-110 hover:text-gray-400"
               aria-label="Instagram"
             >
               <FontAwesomeIcon icon={faInstagram} size="lg" />
@@ -93,7 +93,7 @@ const Header = () => {
               href="https://www.linkedin.com/in/jean-mauvoisin-207a5335/?originalSubdomain=fr"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-gray-400 transition-transform hover:scale-110"
+              className="text-white transition-transform hover:scale-110 hover:text-gray-400"
               aria-label="LinkedIn"
             >
               <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
@@ -141,12 +141,12 @@ const Header = () => {
             </ul>
 
             {/* Liens sociaux pour mobile */}
-            <div className="flex gap-6 mt-6">
+            <div className="mt-6 flex gap-6">
               <Link
                 href="https://www.facebook.com/media/set/?set=a.1398767135193&type=3"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-gray-400 transition-transform hover:scale-110"
+                className="text-white transition-transform hover:scale-110 hover:text-gray-400"
                 aria-label="Facebook"
               >
                 <FontAwesomeIcon icon={faFacebook} size="lg" />
@@ -155,7 +155,7 @@ const Header = () => {
                 href="https://www.instagram.com/jean_mauvoisin/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-gray-400 transition-transform hover:scale-110"
+                className="text-white transition-transform hover:scale-110 hover:text-gray-400"
                 aria-label="Instagram"
               >
                 <FontAwesomeIcon icon={faInstagram} size="lg" />
@@ -164,7 +164,7 @@ const Header = () => {
                 href="https://www.linkedin.com/in/jean-mauvoisin-207a5335/?originalSubdomain=fr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white hover:text-gray-400 transition-transform hover:scale-110"
+                className="text-white transition-transform hover:scale-110 hover:text-gray-400"
                 aria-label="LinkedIn"
               >
                 <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
