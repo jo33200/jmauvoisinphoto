@@ -1,8 +1,8 @@
-import "./globals.css";
-import "@/fontawesome";
-import Header from "@/components/common/header";
-import Footer from "@/components/common/footer";
-import ScrollToTopButton from "@/components/common/ScrollToTopButton";
+import './globals.css';
+import '@/fontawesome';
+import Header from '@/components/common/header';
+import Footer from '@/components/common/footer';
+import ScrollToTopButton from '@/components/common/ScrollToTopButton';
 
 export const metadata = {
   title: 'Jean Mauvoisin',
