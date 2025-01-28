@@ -58,8 +58,8 @@ const Card = ({ title, description, price }) => {
 const Prestations = () => {
   return (
     <div className="px-4 py-32 md:py-8 md:px-12 lg:px-24  min-h-screen">
-      <h1 className="text-4xl font-bold text-center text-white mb-10 md:mb-8">Nos Prestations</h1>
-      <div className="sm:grid flex flex-col justify-center items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+      <h1 className="text-4xl font-bold text-center text-white mb-10 md:mb-24">Mes Prestations</h1>
+      <div className="sm:grid flex flex-col justify-center items-center sm:place-items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 lg:gap-12 lg:max-w-7xl mx-auto">
         {prestations.map((prestation, index) => (
           <Card
             key={index}
