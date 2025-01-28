@@ -51,9 +51,9 @@ const Header = () => {
           <nav aria-label="Navigation principale">
             <ul className="flex gap-10">
               {[
-                { href: '#presentation', label: 'Présentation' },
+                { href: '/#presentation', label: 'Présentation' },
                 { href: '/galerie', label: 'Galerie' },
-                { href: '/prestation', label: 'Prestations' },
+                { href: '/prestations', label: 'Prestations' },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
@@ -124,7 +124,7 @@ const Header = () => {
               {[
                 { href: '#presentation', label: 'Présentation' },
                 { href: '/galerie', label: 'Galerie' },
-                { href: '/prestation', label: 'Prestations' },
+                { href: '/prestations', label: 'Prestations' },
               ].map((link) => (
                 <li key={link.href} className="py-4">
                   <Link
