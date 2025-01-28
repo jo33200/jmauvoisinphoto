@@ -17,22 +17,25 @@ export default function Home() {
       </div>
 
       {/* Section de Présentation */}
-      <section className="relative z-10 mx-auto mt-10 max-w-4xl px-4 text-center text-white">
+      <section id="presentation" className="relative z-10 mx-auto mt-10 max-w-4xl px-4 text-center text-white">
         <h1 className="text-4xl font-bold uppercase text-yellow-500 sm:text-5xl">
-          Bienvenue dans mon univers photographique
+          Bienvenue dans mon univers 
         </h1>
         <p className="mt-6 text-lg leading-relaxed sm:text-xl">
-          Je suis Jean Mauvoisin, photographe passionné et professionnel. Depuis
-          des années, je vis ma vie à travers l’objectif, transformant les
-          instants éphémères en souvenirs éternels. Pour moi, chaque cliché
-          raconte une histoire, capte une émotion et sublime les détails souvent
-          invisibles au premier regard.
+          Je m'appelle Jean Mauvoisin, né en 1959. Passionné de photographie,
+          j’ai eu la chance, après quarante ans de pratique en tant qu’amateur,
+          de pouvoir m’y consacrer pleinement aujourd’hui. En septembre 2020,
+          j’ai intégré l’école EFET Photographie de Paris, où j’ai appris à
+          maîtriser de nouvelles techniques, ce qui m’a permis de continuer à me
+          perfectionner dans l’Art photographique, tant numérique qu’argentique.
         </p>
         <p className="mt-4 text-lg leading-relaxed sm:text-xl">
-          Mon travail s’étend des portraits intimes aux vastes paysages, en
-          passant par les événements qui marquent vos vies. J’aime explorer la
-          lumière et les contrastes pour donner à chaque photo une identité
-          unique et authentique.
+          Depuis avril 2021, je suis auteur-photographe, un statut qui m’a
+          ouvert de nouvelles perspectives. Mon orientation artistique se tourne
+          principalement vers la photo de rue : scènes de vie, architecture, et
+          tout ce qui reflète l’âme d’un lieu. J’aime me laisser guider par mes
+          promenades régulières, que ce soit en ville, à la campagne ou au bord
+          de la mer, pour aller à la rencontre de mes sources d’inspiration.
         </p>
         <p className="mt-4 text-lg leading-relaxed sm:text-xl">
           Au-delà de mon métier, je suis aussi formateur en photographie. J’ai à
@@ -40,9 +43,11 @@ export default function Home() {
           qui souhaitent maîtriser cet art fascinant. Ensemble, nous apprendrons
           à voir le monde sous un nouvel angle.
         </p>
-        <p className="mt-6 text-lg font-semibold text-yellow-500 sm:text-xl">
-          Je vous invite à découvrir mon univers, où chaque image est une
-          invitation à rêver, ressentir et se souvenir.
+        <p className="mt-6 text-lg font-semibold sm:text-xl">
+          Installé en Charente-Maritime depuis 2022, je vis au cœur d’une région
+          qui regorge de trésors photographiques, entre terre et mer. Chaque
+          jour ici est une nouvelle invitation à explorer et capturer la beauté
+          du monde qui m’entoure.
         </p>
       </section>
 

@@ -51,7 +51,7 @@ const Header = () => {
           <nav aria-label="Navigation principale">
             <ul className="flex gap-10">
               {[
-                { href: '/presentation', label: 'Présentation' },
+                { href: '#presentation', label: 'Présentation' },
                 { href: '/galerie', label: 'Galerie' },
                 { href: '/prestation', label: 'Prestations' },
               ].map((link) => (
@@ -122,7 +122,7 @@ const Header = () => {
           >
             <ul className="w-full text-center text-lg">
               {[
-                { href: '/presentation', label: 'Présentation' },
+                { href: '#presentation', label: 'Présentation' },
                 { href: '/galerie', label: 'Galerie' },
                 { href: '/prestation', label: 'Prestations' },
               ].map((link) => (
