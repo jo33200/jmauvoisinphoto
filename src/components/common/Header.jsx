@@ -55,16 +55,15 @@ const Header = () => {
                 { href: '/galerie', label: 'Galerie' },
                 { href: '/prestations', label: 'Prestations' },
               ].map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className={`text-base font-semibold ${
-                      clientPathname === link.href ? 'text-white' : 'text-white'
-                    } transition-transform hover:scale-110`}
-                  >
-                    {link.label}
-                  </Link>
-                </li>
+                <li key={link.href} className="transition-transform hover:scale-110">
+                <Link
+                  href={link.href}
+                  className="text-base font-semibold text-white transition-colors hover:text-gray-400"
+                >
+                  {link.label}
+                </Link>
+              </li>
+              
               ))}
             </ul>
           </nav>

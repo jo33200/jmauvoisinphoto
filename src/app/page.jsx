@@ -8,7 +8,7 @@ export default function Home() {
         <Image
           src="/jeanMamanSanka.jpg"
           alt="Jean"
-          width="1900"
+          width="2900"
           height="1000"
           className="object-cover shadow-inner"
           priority={true}
